@@ -9,6 +9,10 @@
 <table>
   <caption>API EndPoints</caption>
   <tr>
+    <th>Description</th>
+    <th>End points with short desc</th>
+  </tr>
+  <tr>
     <td>Base URL</td>
     <td>Not Defined</td>
   </tr>
