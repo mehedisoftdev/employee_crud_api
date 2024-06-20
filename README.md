@@ -52,5 +52,132 @@
     <td>Delete employee </td>
     <td>api/employees/delete?employeeId = 1</td>
   </tr>
+</table>
+<h3>Every end points response</h3>
+<table>
+  <tr>
+    <th>Enpoints</th>
+    <th>Response</th>
+  </tr>
+  <tr>
+    <td>
+      api/employees/all
+    </td>
+    <td>
+      <pre>
+        {
+  "isSuccess": true,
+  "message": "Data read success",
+  "employees": [
+    {
+      "id": 1,
+      "name": "Jhon Doe",
+      "address": "Barishal"
+    },
+    {
+      "id": 2,
+      "name": "Maimona Akter Ayesha",
+      "address": "Gaforgao, Mymenshing"
+    },
+    {
+      "id": 3,
+      "name": "Mark Zukerburg",
+      "address": "America"
+    },
+    {
+      "id": 4,
+      "name": "Karmakor",
+      "address": "Rajbari"
+    },
+    {
+      "id": 5,
+      "name": "Marki",
+      "address": "Canada"
+    },
+    {
+      "id": 6,
+      "name": "Muzammel",
+      "address": "Chittagong"
+    }
+  ]
+}
+      </pre>
+    </td>
+  </tr>
+  <tr>
+    <td>api/employees?employeeId=1</td>
+    <td>
+      <pre>
+        {
+  "isSuccess": true,
+  "message": "Data read success",
+  "employees": [
+    {
+      "id": 1,
+      "name": "Jhon Doe",
+      "address": "Barishal"
+    }
+  ]
+}
+      </pre>
+    </td>
+  </tr>
+
+   <tr>
+    <td>api/employees/save</td>
+    <td>
+      <pre>
+{
+  "isSuccess": true,
+  "message": "Employee Id: 9 is saved successfully",
+  "employees": [
+    {
+      "id": 9,
+      "name": "string",
+      "address": "string"
+    }
+  ]
+}
+      </pre>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      api/employees/update?employeeId=1
+    </td>
+    <td>
+      <pre>
+        {
+  "isSuccess": true,
+  "message": "Employee Id: 1 has been successfully updated",
+  "employees": [
+    {
+      "id": 1,
+      "name": "string",
+      "address": "string"
+    }
+  ]
+}
+      </pre>
+    </td>
+  </tr>
+  <tr>
+    <td>api/employees/delete?employeeId = 1</td>
+    <td>
+      <pre>
+        {
+  "isSuccess": true,
+  "message": "Employee Id : 1 has been successfully deleted",
+  "employees": [
+    {
+      "id": 1,
+      "name": "string",
+      "address": "string"
+    }
+  ]
+}
+      </pre>
+    </td>
+  </tr>
   
 </table>
