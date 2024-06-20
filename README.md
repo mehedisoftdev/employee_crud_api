@@ -1,71 +1,24 @@
 # Employee CRUD API
-<table>
-  <tr>
-  <td>Techonology</td>
-  <td>.NET Core 8.0, C#, Visual Studio 2022</td>
-</tr>
-</table>
-## Documentation of API Endpoints
-<table>
-  <caption>API EndPoints</caption>
-  <tr>
-    <th>Description</th>
-    <th>End points with short desc</th>
-  </tr>
-  <tr>
-    <td>Base URL</td>
-    <td>Not Defined</td>
-  </tr>
-  <tr>
-    <td>Read All Employees</td>
-    <td>api/employees/all</td>
-  </tr>
-  <tr>
-    <td>Read Particular Employee </td>
-    <td>api/employees?employeeId = 1</td>
-  </tr>
-  <tr>
-    <td>Save Employee</td>
-    <td>api/employees/save <br>Employee data should pass with json structure <br>
-  <pre>
-    {
-      "id": 0,
-      "name": "string",
-      "address": "string"
-   }
-  </pre>
-</td>
-  </tr>
-  <tr>
-    <td>Update Employee </td>
-    <td>api/employees/update?employeeId = 1 <br>Employee data should pass with json structure <br>
-  <pre>
-    {
-      "id": 0,
-      "name": "string",
-      "address": "string"
-   }
-  </pre>
-    </td>
-  </tr>
-  <tr>
-    <td>Delete employee </td>
-    <td>api/employees/delete?employeeId = 1</td>
-  </tr>
-</table>
-<h3>Every end points response</h3>
-<table>
-  <tr>
-    <th>Enpoints</th>
-    <th>Response</th>
-  </tr>
-  <tr>
-    <td>
-      api/employees/all
-    </td>
-    <td>
-      <pre>
-        {
+
+## Technology
+- .NET Core 8.0, C#, Visual Studio 2022
+
+## API EndPoints
+
+| Description             | Endpoints with Short Description                   |
+|-------------------------|----------------------------------------------------|
+| Base URL                | Not Defined                                        |
+| Read All Employees      | `GET /api/employees/all`                           |
+| Read Particular Employee| `GET /api/employees?employeeId=1`                  |
+| Save Employee           | `POST /api/employees/save`                         |
+| Update Employee         | `PUT /api/employees/update?employeeId=1`           |
+| Delete Employee         | `DELETE /api/employees/delete?employeeId=1`        |
+
+## Every endpoint response
+
+### GET /api/employees/all
+```json
+{
   "isSuccess": true,
   "message": "Data read success",
   "employees": [
@@ -101,14 +54,11 @@
     }
   ]
 }
-      </pre>
-    </td>
-  </tr>
-  <tr>
-    <td>api/employees?employeeId=1</td>
-    <td>
-      <pre>
-        {
+```
+
+### GET /api/employees?employeeId=1
+```json
+{
   "isSuccess": true,
   "message": "Data read success",
   "employees": [
@@ -119,14 +69,10 @@
     }
   ]
 }
-      </pre>
-    </td>
-  </tr>
+```
 
-   <tr>
-    <td>api/employees/save</td>
-    <td>
-      <pre>
+### POST /api/employees/save
+```json
 {
   "isSuccess": true,
   "message": "Employee Id: 9 is saved successfully",
@@ -138,16 +84,11 @@
     }
   ]
 }
-      </pre>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      api/employees/update?employeeId=1
-    </td>
-    <td>
-      <pre>
-        {
+```
+
+#### PUT /api/employees/update?employeeId=1
+```json
+{
   "isSuccess": true,
   "message": "Employee Id: 1 has been successfully updated",
   "employees": [
@@ -158,14 +99,11 @@
     }
   ]
 }
-      </pre>
-    </td>
-  </tr>
-  <tr>
-    <td>api/employees/delete?employeeId = 1</td>
-    <td>
-      <pre>
-        {
+```
+
+### DELETE /api/employees/delete?employeeId=1
+```json
+{
   "isSuccess": true,
   "message": "Employee Id : 1 has been successfully deleted",
   "employees": [
@@ -176,8 +114,6 @@
     }
   ]
 }
-      </pre>
-    </td>
-  </tr>
-  
-</table>
+```
+
+
