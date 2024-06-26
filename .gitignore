@@ -1,2 +1,10 @@
 .vs
 .git
+.vs/*
+bin/
+obj/
+*.user
+*.pdb
+*.dll
+*.cache
+*.AssemblyAttributes.cs
